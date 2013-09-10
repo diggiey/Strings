@@ -1,12 +1,14 @@
 public class array {
 	
 	public static void main(String[] args) {
-		int[] a = {0, 31, 32, 3, 4, 6};
+		int[] a = {0, 1, 2, 3, 4, 5};
 		// doubleIt(a);
 		
 		// sum(a);
 		
-		largest(a);
+		// largest(a);
+		
+		closest(a);
 
 		// int[] data = new int[10];
 		// int x = 10;
@@ -83,7 +85,23 @@ public class array {
 	// closest to zero
 	// return the index of the number closest to zero in the array
 	
+	public static int[] closest(int[] a) {
+		int answer = 0;
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] > answer) {
+				answer = a[i];
+			}
+		}
 
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] < answer) {
+				answer = a[i];
+			}
+		}
+
+		System.out.println(answer);
+		return a;
+	}
 
 	// smash
 	// takes two arrays and returns a and b together as one array
