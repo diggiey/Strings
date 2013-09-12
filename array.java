@@ -2,6 +2,7 @@ public class array {
 	
 	public static void main(String[] args) {
 		int[] a = {0, 1, 2, 3, 4, 5};
+		int[] b = {6, 7, 8, 9, 10, 11};
 		// doubleIt(a);
 		
 		// sum(a);
@@ -106,7 +107,9 @@ public class array {
 	// smash
 	// takes two arrays and returns a and b together as one array
 
+	public static int[] smash(int[] a) {
 
+	}
 
 	public static void printArray(int[] a) {
 		for (int i=0; i < a.length; i++) {
