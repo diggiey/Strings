@@ -9,7 +9,9 @@ public class array {
 		
 		// largest(a);
 		
-		closest(a);
+		// closest(a);
+
+		isAbecedarian("yolo");
 
 		// int[] data = new int[10];
 		// int x = 10;
@@ -25,6 +27,19 @@ public class array {
 
 		// for loop that sets countdown from 10.
 
+	}
+
+	public static boolean isAbecedarian(String a) {
+		for (int i=0; i < a.length(); i++) {
+			if (a.charAt(i) > a.charAt(i+1)) {
+				System.out.println("False");
+				return false;
+			} else {
+				System.out.println("True");
+				return true;
+			}
+		}
+		return true;
 	}
 
 	// Double every number in the array
@@ -108,7 +123,7 @@ public class array {
 	// takes two arrays and returns a and b together as one array
 
 	public static int[] smash(int[] a) {
-
+		return null;
 	}
 
 	public static void printArray(int[] a) {
